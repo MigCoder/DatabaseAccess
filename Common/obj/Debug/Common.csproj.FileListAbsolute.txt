@@ -8,3 +8,8 @@ C:\Users\ilove_000\Desktop\HKProject\ExcelMapping\Common\bin\Debug\Common.pdb
 C:\Users\ilove_000\Desktop\HKProject\ExcelMapping\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 C:\Users\ilove_000\Desktop\HKProject\ExcelMapping\Common\obj\Debug\Common.dll
 C:\Users\ilove_000\Desktop\HKProject\ExcelMapping\Common\obj\Debug\Common.pdb
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\Common\bin\Debug\Common.dll
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\Common\bin\Debug\Common.pdb
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\Common\obj\Debug\Common.dll
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\Common\obj\Debug\Common.pdb

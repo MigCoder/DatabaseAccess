@@ -47,7 +47,7 @@ namespace Common.EntityTool
         /// </summary>
         private void Init()
         {
-            //获取实体类型的所有公有属性
+            //获取实体类型的所有公有属性(不要静态属性)
             var type = typeof(T);
             var props = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
             foreach (var info in props) Props[info.Name] = info;
@@ -57,11 +57,11 @@ namespace Common.EntityTool
 
             foreach (var prop in props)
             {
+                //不是可写可读的属性跳过
+                if (!prop.CanRead || !prop.CanWrite) continue;
+
                 var setMethodInfo = prop.GetSetMethod();
                 var getMethodInfo = prop.GetGetMethod();
-
-                //不是可写的属性跳过
-                if (setMethodInfo == null) continue;
 
                 //实例是必须的
                 var instance = Expression.Convert(instanceParam, setMethodInfo.ReflectedType);

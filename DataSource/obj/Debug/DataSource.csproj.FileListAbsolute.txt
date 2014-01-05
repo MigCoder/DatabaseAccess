@@ -9,3 +9,14 @@ C:\Users\ilove_000\Desktop\HKProject\ExcelMapping\DataSource\bin\Debug\Entity.pd
 C:\Users\ilove_000\Desktop\HKProject\ExcelMapping\DataSource\bin\Debug\InterFace.pdb
 C:\Users\ilove_000\Desktop\HKProject\ExcelMapping\DataSource\obj\Debug\DataSource.dll
 C:\Users\ilove_000\Desktop\HKProject\ExcelMapping\DataSource\obj\Debug\DataSource.pdb
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\bin\Debug\DataSource.dll
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\bin\Debug\DataSource.pdb
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\bin\Debug\Common.dll
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\bin\Debug\Entity.dll
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\bin\Debug\InterFace.dll
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\bin\Debug\Common.pdb
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\bin\Debug\Entity.pdb
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\bin\Debug\InterFace.pdb
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\obj\Debug\DataSource.csprojResolveAssemblyReference.cache
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\obj\Debug\DataSource.dll
+C:\Users\ilove_000\Desktop\DataBaseAccess\DatabaseAccess\DataSource\obj\Debug\DataSource.pdb

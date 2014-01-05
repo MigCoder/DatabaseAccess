@@ -62,11 +62,11 @@
       <Project>{558748df-44e7-4711-bbb1-0afbb85b373e}</Project>
       <Name>Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Entity\Entity.csproj">
+    <ProjectReference Include="..\..\..\HKProject\ExcelMapping\Entity\Entity.csproj">
       <Project>{91107c63-4172-494a-90ec-59e944d9c8ef}</Project>
       <Name>Entity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\InterFace\InterFace.csproj">
+    <ProjectReference Include="..\..\..\HKProject\ExcelMapping\InterFace\InterFace.csproj">
       <Project>{20d4516d-580d-415a-a8bf-f3a3297181fc}</Project>
       <Name>InterFace</Name>
     </ProjectReference>
