@@ -9,25 +9,31 @@ namespace DataSource.QueryMap
     /// <summary>
     /// 查询式翻译
     /// </summary>
-    public class QueryTranslate : IQueryable<int>
+    public class QueryTranslate<T> : IQueryable<T>
     {
-        public QueryTranslate()
+        public QueryTranslate(Expression exp, IQueryProvider provider)
         {
-
+            this.Expression = exp;
+            this.Provider = provider;
         }
 
-        public IEnumerator<int> GetEnumerator()
+        public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return ((IEnumerable<T>)Provider.Execute(Expression)).GetEnumerator();
         }
 
-        public Expression Expression { get; private set; }
-        public Type ElementType { get; private set; }
-        public IQueryProvider Provider { get; private set; }
-        IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
+
+        public Type ElementType
+        {
+            get { return typeof(T); }
+        }
+        public Expression Expression { get; private set; }
+        public IQueryProvider Provider { get; private set; }
+
     }
 
     public class HkQueryProvider : IQueryProvider
@@ -39,7 +45,7 @@ namespace DataSource.QueryMap
 
         public IQueryable<TElement> CreateQuery<TElement>(Expression expression)
         {
-            throw new NotImplementedException();
+            return new QueryTranslate<TElement>(expression, this);
         }
 
         public object Execute(Expression expression)

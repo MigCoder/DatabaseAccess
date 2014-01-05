@@ -52,7 +52,7 @@ namespace Common.EntityTool
             var props = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
             foreach (var info in props) Props[info.Name] = info;
 
-            //一个实例表达式
+            //一个实例参数表达式（Action<T,object>中的T）
             var instanceParam = Expression.Parameter(type, "Instance");
 
             foreach (var prop in props)
@@ -63,35 +63,25 @@ namespace Common.EntityTool
                 var setMethodInfo = prop.GetSetMethod();
                 var getMethodInfo = prop.GetGetMethod();
 
-                //实例是必须的
-                var instance = Expression.Convert(instanceParam, setMethodInfo.ReflectedType);
-
                 #region 获取Set委托
 
-                //每个Set方法只有一个参数"Value"
                 var setParam = setMethodInfo.GetParameters()[0];
-                //一个Object类型的参数表达式
                 var objSetParam = Expression.Parameter(typeof(object), setParam.Name);
-                //将刚才的Object参数强转成属性的数据类型,报错就报错关我屁事......
-                var castSetParam = Expression.Convert(objSetParam, setParam.ParameterType);
-                //生成一个Set方法的调用表达式，把刚才强转好的值递给它
-                var setInvoke = Expression.Call(instance, setMethodInfo, castSetParam);
-                //生成lambda语句
+                var castSetParam = Expression.Convert(objSetParam, prop.PropertyType);
+
+                var setInvoke = Expression.Call(instanceParam, setMethodInfo, castSetParam);
+
                 var lambda = Expression.Lambda<Action<T, object>>(setInvoke, instanceParam, objSetParam);
-                //编译得到委托
                 var setValueDelgate = lambda.Compile();
 
                 #endregion
 
                 #region 获取Get委托
 
-                //生成一个Get方法的调用表达式
-                var getInvoke = Expression.Call(instance, getMethodInfo);
-                //将调用表达式的返回值装进一个Object,因为你不知道它返回了什么
-                var castInvoke = Expression.Convert(getInvoke, typeof(object));
-                //生成lambda语句
-                var getLambda = Expression.Lambda<Func<T, object>>(castInvoke, instanceParam);
-                //编译得到委托
+                var getInvoke = Expression.Call(instanceParam, getMethodInfo);
+                var castReturnValue = Expression.Convert(getInvoke, typeof(object));
+
+                var getLambda = Expression.Lambda<Func<T, object>>(castReturnValue, instanceParam);
                 var getValueDelegate = getLambda.Compile();
 
                 #endregion
