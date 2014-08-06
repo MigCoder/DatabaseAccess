@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Data", "DataSource\Demo.Data.csproj", "{76A86C32-85C2-42EF-BFC4-4F3DFBE891D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Data", "Demo.DataSource\Demo.Data.csproj", "{76A86C32-85C2-42EF-BFC4-4F3DFBE891D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Common", "Common\Demo.Common.csproj", "{558748DF-44E7-4711-BBB1-0AFBB85B373E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Common", "Demo.Common\Demo.Common.csproj", "{558748DF-44E7-4711-BBB1-0AFBB85B373E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{55BB9D12-9BB3-493F-9F8F-3F474F43E5FE}"
 EndProject
