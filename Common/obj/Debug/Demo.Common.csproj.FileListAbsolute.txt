@@ -1,0 +1,4 @@
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\Common\bin\Debug\Demo.Common.dll
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\Common\bin\Debug\Demo.Common.pdb
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\Common\obj\Debug\Demo.Common.dll
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\Common\obj\Debug\Demo.Common.pdb

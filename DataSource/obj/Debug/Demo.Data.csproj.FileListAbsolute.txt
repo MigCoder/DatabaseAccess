@@ -1,0 +1,7 @@
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\DataSource\bin\Debug\Demo.Data.dll
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\DataSource\bin\Debug\Demo.Data.pdb
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\DataSource\bin\Debug\Demo.Common.dll
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\DataSource\bin\Debug\Demo.Common.pdb
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\DataSource\obj\Debug\Demo.Data.csprojResolveAssemblyReference.cache
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\DataSource\obj\Debug\Demo.Data.dll
+C:\Users\ilove_000\Desktop\GitTest\DatabaseAccess\DataSource\obj\Debug\Demo.Data.pdb
