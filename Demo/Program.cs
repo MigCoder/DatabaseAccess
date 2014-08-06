@@ -6,7 +6,7 @@ namespace Demo
 {
     class Program
     {
-        private const string SqlConnectionStr = @"Data Source=ILOVEZCD\ilovezcd;Initial Catalog=Test;User ID=sa;Password=xiaobendan";
+        private const string SqlConnectionStr = @"Data Source=数据库实例;Initial Catalog=数据库;User ID=用户名;Password=密码";
 
         static void Main(string[] args)
         {
